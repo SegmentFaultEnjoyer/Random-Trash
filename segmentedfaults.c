@@ -1,11 +1,7 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 int main(void) {
-    int c *ptr;
-    int c = 4;
-    *ptr = NULL;
-    printf ("%d, *ptr");
-
+    int *ptr = NULL;
+    *ptr = 6;
     return 0;
 }
