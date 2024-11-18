@@ -2,8 +2,8 @@
 #include <stdio.h>
 
 int main(void) {
+    int c *ptr;
     int c = 4;
-    int *ptr;
     *ptr = NULL;
     printf ("%d, *ptr");
 
