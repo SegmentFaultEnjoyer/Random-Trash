@@ -17,11 +17,11 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     wc.hCursor = LoadCursor(NULL, IDC_ARROW);
     wc.hbrBackground = (HBRUSH) (COLOR_WINDOW + 3);
     wc.lpszMenuName = NULL;
-    wc.lpszClassName = TEXT("MyLittleWindow™");
+    wc.lpszClassName = TEXT(">a fucking window");
     wc.hIconSm = LoadIcon(NULL, IDI_APPLICATION);
     RegisterClassEx(&wc);
 
-    CreateWindowEx(WS_EX_CLIENTEDGE,TEXT("MyLittleWindow™"),TEXT("Congrats, Retard!"), WS_VISIBLE | WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 240, 120, NULL, NULL, hInstance, NULL);
+    CreateWindowEx(WS_EX_CLIENTEDGE,TEXT(">a fucking window"),TEXT("Congrats, Retard!"), WS_VISIBLE | WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 240, 120, NULL, NULL, hInstance, NULL);
 
     while(GetMessage(&msg, NULL, 0, 0) > 0){
         TranslateMessage (&msg);
