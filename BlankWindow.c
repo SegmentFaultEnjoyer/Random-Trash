@@ -21,7 +21,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
     wc.hIconSm = LoadIcon(NULL, IDI_APPLICATION);
     RegisterClassEx(&wc);
 
-    CreateWindowEx(WS_EX_CLIENTEDGE,TEXT(">a fucking window"),TEXT("Congrats, Retard!"), WS_VISIBLE | WS_OVERLAPPEDWINDOW, CW_USEDEFAULT, CW_USEDEFAULT, 240, 120, NULL, NULL, hInstance, NULL);
+    CreateWindowEx(WS_EX_CLIENTEDGE,TEXT(">a fucking window"),TEXT("Congrats, Retard!"), WS_VISIBLE | WS_OVERLAPPEDWINDOW, 
+        CW_USEDEFAULT, CW_USEDEFAULT, 240, 120, NULL, NULL, hInstance, NULL);
 
     while(GetMessage(&msg, NULL, 0, 0) > 0){
         TranslateMessage (&msg);
@@ -45,4 +46,5 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam){
     }
     return 0;
 }
+
 
