@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <windows.h>
-
+//This is some dogshit code I stole from Stack Overflow, lol
 LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow){
     WNDCLASSEX wc;
@@ -45,3 +45,4 @@ LRESULT CALLBACK WndProc (HWND hwnd, UINT msg, WPARAM wParam, LPARAM lParam){
     }
     return 0;
 }
+
